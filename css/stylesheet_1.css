@@ -645,11 +645,14 @@ home-img{
 }
 @media (max-width: 600px) {
     .home {
+        display: flex;
         flex-direction: column;
-        gap: 1.5rem !important;
-        margin: 2rem 0.5rem !important;
         align-items: center !important;
-        justify-content: flex-start !important;
+        justify-content: center !important;
+        min-height: 100vh !important;
+        padding: 2rem 1rem !important;
+        margin: 0 !important;
+        gap: 1.2rem !important;
     }
     .home-img {
         order: 1;
@@ -662,7 +665,7 @@ home-img{
         width: 120px !important;
         max-width: 60vw !important;
         min-width: 80px;
-        top: 0 !important;
+        border-radius: 50%;
         margin: 0 !important;
         box-shadow: 0 0 10px var(--main-color);
     }
@@ -670,44 +673,50 @@ home-img{
         order: 2;
         align-items: center !important;
         text-align: center !important;
-        margin: 0.5rem 0 0 0 !important;
         width: 100%;
+        margin: 0 !important;
     }
     .home-content h1 {
         font-size: 2rem !important;
-        margin-top: 0.5rem !important;
+        margin: 0.5rem 0 0.2rem 0 !important;
         line-height: 1.1;
     }
     .home-content h3 {
         font-size: 1.2rem !important;
-        margin: 0.5rem 0 !important;
+        margin: 0.2rem 0 !important;
     }
     .home-content p {
         font-size: 1rem !important;
-        max-width: 100% !important;
-        margin: 0.5rem 0 0 0 !important;
+        margin: 0.5rem 0 !important;
         line-height: 1.5;
+        max-width: 100%;
     }
     .btn-grup {
         flex-direction: column !important;
         gap: 0.5rem !important;
         width: 100%;
         align-items: center;
+        margin-top: 0.5rem;
     }
     .btn {
         font-size: 1.1rem !important;
         padding: 0.7rem 1.5rem !important;
+        width: 80%;
+        max-width: 220px;
     }
     .social-icons {
         margin-bottom: 0.5rem !important;
         justify-content: center;
         width: 100%;
+        display: flex;
+        gap: 0.5rem;
     }
     .social-icons a {
         margin: 0 0.5rem 0.5rem 0 !important;
         width: 2.5rem !important;
         height: 2.5rem !important;
         font-size: 1.3rem !important;
+        transition: 0.3s ease-in-out;
     }
 }
 @media (max-width: 768px) {
