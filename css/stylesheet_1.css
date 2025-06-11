@@ -377,14 +377,11 @@ home-img{
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.skill-box .skill-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
+.skill-box {
+    height: 300px; /* HAPUS atau override di mobile */
+}
+.skill-info {
+    max-height: 200px; /* HAPUS atau override di mobile */
 }
 .skill-info h4{
     font-size: 3rem;
@@ -1051,6 +1048,52 @@ html, body {
         align-items: flex-start;
         text-align: left;
         width: 100%;
+    }
+    .skill-info h4 {
+        font-size: 1.2rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .skill-info p {
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+        max-height: none !important;
+        word-break: break-word;
+    }
+}
+@media (max-width: 600px) {
+    .skill-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.2rem !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box;
+        padding: 0 0.5rem !important;
+    }
+    .skill-box {
+        height: auto !important;
+        min-height: 0 !important;
+        display: flex !important;
+        align-items: stretch !important;
+        border-radius: 1.5rem !important;
+        background: var(--main-color);
+        color: black;
+        width: 100% !important;
+    }
+    .skill-info {
+        padding: 1.2rem 1rem !important;
+        max-height: none !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
     }
     .skill-info h4 {
         font-size: 1.2rem !important;
