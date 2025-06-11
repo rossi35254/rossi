@@ -951,3 +951,17 @@ html, body {
         transition: 0.3s ease-in-out;
     }
 }
+@media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+        gap: 1.5rem !important;
+        margin: 0 !important; /* Hapus margin atas/bawah */
+        align-items: center !important;
+        justify-content: center !important; /* Tengah vertikal */
+        min-height: 100vh !important;      /* Penuhi tinggi layar */
+        padding: 2rem 0.5rem !important;   /* Padding kecil */
+    }
+    section#home {
+        padding: 0 !important; /* Hapus padding section home di mobile */
+    }
+}
